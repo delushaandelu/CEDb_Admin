@@ -1,5 +1,19 @@
+<app-dashmenu></app-dashmenu>
 <div class="row dramaHead" *ngIf="movie" style="margin: 0;">
   <div class="col-md-4">
     <img src="assets/img/{{movie.startedYear}}" alt="" class="thumbnail Mimage" style="margin-top: 10px">
+    <p>{{movieTitle}}</p>
+    <p>{{tvChannel}}</p>
     <p>{{startedYear}}</p>
+    <p>{{showTime}}</p>
+    <p>{{status}}</p>
+    <p><img src="{{imagePath}}"></p>
+    <p>{{rating}}</p>
+    <p>{{likes}}</p>
+    <p>{{overview}}</p>
+    <p>{{category}}</p>
+    <iframe width="560" height="315" src="{{trailerURL}}]" frameborder="0" allowfullscreen></iframe>
+    <p>{{Director}}</p>
+    <p>{{numberOfSeasons}}</p>
+    <p>{{numberOfEpisodes}}</p>
   </div>

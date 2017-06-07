@@ -60,21 +60,21 @@ export class DramainfoComponent implements OnInit {
       this.id = params['drama'];
       this.authservice.getInfoDrama(this.id).subscribe(movie => {
         console.log(movie[0].movieTitle);
-        this.movie = movie;
+        this.movie = movie[0];
         this.movieTitle = movie[0].movieTitle;
-        this.tvChannel = movie.tvChannel;
+        this.tvChannel = movie[0].tvChannel;
         this.startedYear = movie[0].startedYear;
-        this.showTime = movie.showTime;
-        this.status = movie.status;
+        this.showTime = movie[0].showTime;
+        this.status = movie[0].status;
         this.imagePath = movie[0].imagePath;
-        this.rating = movie.rating;
-        this.likes = movie.likes;
-        this.overview = movie.overview;
-        this.category = movie.category;
-        this.trailerURL = movie.trailerURL;
-        this.Director = movie.Director;
-        this.numberOfSeasons = movie.numberOfSeasons;
-        this.numberOfEpisodes = movie.numberOfEpisodes;
+        this.rating = movie[0].rating;
+        this.likes = movie[0].likes;
+        this.overview = movie[0].overview;
+        this.category = movie[0].category;
+        this.trailerURL = movie[0].trailerURL;
+        this.Director = movie[0].Director;
+        this.numberOfSeasons = movie[0].numberOfSeasons;
+        this.numberOfEpisodes = movie[0].numberOfEpisodes;
       });
     });
   }
