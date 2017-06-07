@@ -48,6 +48,22 @@ export class ViewdramaComponent implements OnInit {
       })
   }
 
+  getInfoDrama(id:any)
+  {
+    var dramas = this.dramas;
+    this.authservice.getInfoDrama(id)
+      .subscribe(data =>{
+        if(data.n==1){
+          for(var i = 0; i< dramas.length; i++){
+            if(dramas[i]._id == id){
+              dramas.splice(i, 1);
+              console.log(id);
+            }
+          }
+        }
+      })
+  }
+
   ngOnInit() {
     this.authservice.gerDrama()
       .subscribe(dramas=> {

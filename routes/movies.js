@@ -52,6 +52,17 @@ router.get('/infodrama/:id', (req , res, next)=>{
     res.json(movie);
 })
 });
+// Get Single Drama
+router.get('/getmovie/:id', (req, res, next) => {
+    Movie.find({_id: req.params.id}, function (err,movie) {
+    if(err){
+      res.json(err);
+    }else{
+      res.json(movie);
+    }
+
+});
+});
 
 //delete a drama
 router.delete('/movieremove/:id',(req, res, next)=>{

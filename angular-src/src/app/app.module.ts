@@ -36,7 +36,8 @@ const appRoutes: Routes = [
   {path: 'viewdrama', component: ViewdramaComponent},
   {path: 'summary', component: SummaryComponent},
   {path: 'dashmenu', component: DashmenuComponent},
-  {path: 'dramainfo', component: DramainfoComponent}
+  {path: 'dramainfo', component: DramainfoComponent},
+  {path: 'dramainfo/:drama', component: DramainfoComponent}
 ]
 
 @NgModule({

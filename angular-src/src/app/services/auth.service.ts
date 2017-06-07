@@ -48,9 +48,9 @@ export class AuthService {
       .map(res => res.json());
   }
 
-  dramaInfo(id){
-    return this.http.get('http://localhost:3000/movies/infodrama/'+id)
-    //return this.http.get('movies/infodrama/'+id)
+  getInfoDrama(id: string){
+    return this.http.get('http://localhost:3000/movies/getmovie/'+id)
+    //return this.http.get('movies/getmovie/'+id)
       .map(res => res.json());
   }
 
