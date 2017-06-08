@@ -1,5 +1,31 @@
+#coverimage{
+  margin-top: 10%;
+  width: 30%;
+  height:40%;
+  position: absolute;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
 #viewDrama{
-  margin-left: 20%;
-  margin-right: 40%;
-  margin-top: 12%;
+  margin-left: 52%;
+  margin-right: 18%;
+  margin-top: 9%;
+
+}
+
+#overview{
+  width: 320%;
+  margin-left: -210%;
+  margin-top: -20%;
+}
+
+#total{
+  margin-left: 40%;
+}
+
+#utl{
+  margin-left: -30%;
 }
